@@ -1,4 +1,5 @@
 "use client"
+import IncreaseBear from "../../components/bear/increase.bear";
 import { useBearsStore } from "../../public/store/bears.store";
 const HomePage = () => {
   const bears = useBearsStore((state) => state.bears)
@@ -7,6 +8,7 @@ const HomePage = () => {
       Home page
       </h1>
       <p>Bears: {bears}</p>
+      <IncreaseBear />
       </div>
   );
 };
